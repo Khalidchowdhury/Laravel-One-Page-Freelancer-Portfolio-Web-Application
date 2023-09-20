@@ -21,6 +21,22 @@ class AdminController extends Controller
         return view('backend.home.home');
     }
 
+    // About Section edit
+
+    public function aboutSection()
+    {
+        return view('backend.about.about');
+    }
+
+
+
+    // Contact Section 
+    public function contactSection()
+    {
+        return view('backend.contact.contact');
+    }
+
+
 
 
 

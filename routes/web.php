@@ -12,6 +12,20 @@ Route::get('/', [ FrontendController::class, 'HomePage' ]) -> name('home.page');
 
 
 // Admin Panel Route
-Route::get('/cPanel', [ AdminController::class, 'adminPanel' ]) -> name('admin.page');
+Route::get('/cPanel', [ AdminController::class, 'adminPanel' ]) -> name('cPanel');
 
-Route::get('/home-section', [ AdminController::class, 'homeSection' ]) -> name('home.section');
+Route::get('/home', [ AdminController::class, 'homeSection' ]) -> name('home');
+
+Route::get('/about', [ AdminController::class, 'aboutSection' ]) -> name('about');
+
+Route::get('/contact', [ AdminController::class, 'contactSection' ]) -> name('contact');
+
+
+
+
+
+
+
+
+
+

@@ -17,24 +17,16 @@
             {{-- Menu Item --}}
 
             <li class="nav-item menu-open">
-              <a href="{{ route('admin.page') }}" class="nav-link active">
+              <a href="{{ route('cPanel') }}" class="nav-link {{ request()->is('cPanel') ? 'active' : '' }}">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                   Dashboard
-                  <i class="right fas fa-angle-left"></i>
                 </p>
               </a>
             </li>
 
             <li class="nav-item menu-open">
-              <a href="#" class="nav-link">
-                <i class="nav-icon far fa-plus-square"></i>
-                <p>Navbar</p>
-              </a>
-            </li>
-
-            <li class="nav-item menu-open">
-              <a href="{{ route('home.section') }}" class="nav-link">
+              <a href="{{ route('home') }}" class="nav-link {{ request()->is('home') ? 'active' : '' }}">
                 <i class="nav-icon far fa-image"></i>
                 <p>Home</p>
               </a>
@@ -48,14 +40,14 @@
             </li>
 
             <li class="nav-item menu-open">
-              <a href="#" class="nav-link">
+              <a href="{{ route('about') }}" class="nav-link {{ request()->is('about') ? 'active' : '' }}">
                 <i class="nav-icon fas fa-copy"></i>
                 <p>About</p>
               </a>
             </li>
 
             <li class="nav-item menu-open">
-              <a href="#" class="nav-link">
+              <a href="{{ route('contact') }}" class="nav-link {{ request()->is('contact') ? 'active' : '' }}">
                 <i class="nav-icon fas fa-phone-alt"></i>
                 <p>Contact</p>
               </a>
